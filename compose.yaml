@@ -1,0 +1,10 @@
+services:
+  pi-container:
+    command: pi
+    image: 'tarunsrisai/pi-container:latest'
+    volumes:
+      - ${MODELS_JSON}:/root/.pi/agent/models.json:ro
+      - ${PWD}:/app
+    working_dir: /app
+    tty: true
+    stdin_open: true
