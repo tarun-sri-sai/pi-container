@@ -1,7 +1,7 @@
 services:
   pi-container:
     command: pi
-    image: 'tarunsrisai/pi-container:latest'
+    image: docker.io/tarunsrisai/pi-container:latest
     volumes:
       - ${MODELS_JSON}:/root/.pi/agent/models.json:ro
       - ${PWD}:/app
