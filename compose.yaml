@@ -1,7 +1,9 @@
 services:
   pi-container:
     command: pi
-    image: docker.io/tarunsrisai/pi-container:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - ${MODELS_JSON}:/root/.pi/agent/models.json:ro
       - ${PWD}:/app

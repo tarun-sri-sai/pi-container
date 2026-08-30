@@ -1,3 +1,3 @@
 # Pi Container
 
-This repository contains the Dockerfile for `tarunsrisai/pi-container`.
+This repository contains the image for `tarunsrisai/pi-container`.
