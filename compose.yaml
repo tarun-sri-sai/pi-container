@@ -5,6 +5,6 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ${MODELS_JSON}:/root/.pi/agent/models.json:ro
+      - ${PI_AGENT_DIR}:/root/.pi/agent
       - ${PWD}:/app
     working_dir: /app
